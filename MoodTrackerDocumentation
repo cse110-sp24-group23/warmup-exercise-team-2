@@ -21,3 +21,14 @@
 	* Create issues
 	* Testing documentation
 	* Update team README.md files
+
+## Team Specifications
+ * When adding changes, create a branch off of dev, edit accordingly, and push to dev
+	* Make sure to attach any resolved issues to the pull request
+ * Experimenting with AI
+	* Use of AI is permitted for generating basic syntax and debugging code
+	* All final code should be handwritten. If it originates from AI, then it must be edited in some way
+ * Test all written code and document what tests are used + if the tests pass or not
+ * Keep notes on what went well, what didn't, what could be improved, and what potential issues you can foresee (SWOT analysis)
+ * GOAL: Finish by Thursday to allow time to merge with larger team
+
