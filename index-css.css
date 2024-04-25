@@ -3,7 +3,7 @@
     --section-background: #fff3ef;
     --main-background: #FAC9B8;
     --submit: #72473b;
-    --smaller-heading: #ab6b5a;
+    --heading: #ab6b5a;
 }
 
 /*setting background color*/
@@ -13,76 +13,76 @@ body{
 
 /*styling texts*/
 h1{ 
-    padding: 30px;
-    text-align: center;
+    padding: 30px; /*increase the side of lighter background*/
+    text-align: center; /*align text in the center*/
     background-color: var(--section-background, #fff3ef);
-    border-radius: 10px;
-    color:  var(--smaller-heading, #ab6b5a);
-    font-family: "Shrikhand", serif; /*google font*/
+    border-radius: 10px; /*roudning out lighter background*/
+    color:  var(--heading, #ab6b5a);
+    font-family: "Shrikhand", serif; /*google font for main headin*/
     font-size: 50px;
 }
 
 /*styling texts*/
 h2{
-    padding: 15px;
+    padding: 15px; /*increase the side of lighter background*/
     text-align: center;
     background-color: var(--section-background, #fff3ef);
-    border-radius: 10px;
-    color: var(--smaller-heading, #ab6b5a);  
-    font-family: "Archivo", sans-serif; /*google font*/
+    border-radius: 10px; /*roudning out lighter background*/
+    color: var(--heading, #ab6b5a);  
+    font-family: "Archivo", sans-serif; /*google font for second heading*/
     
 }
 
 /*styling flex box for emotion button*/
 .emotion_button{
     display: flex;
-    justify-content:center;
-    column-gap: 20px;
+    justify-content:center; /* scentering emojis*/
+    column-gap: 20px; /* increasing gap between emojis*/
     background-color: var(--section-background, #fff3ef);
-    border-radius: 10px;
-    padding: 30px;
-    flex-wrap: wrap;
+    border-radius: 10px; /*roudning out lighter background*/
+    padding: 30px; /*increase the side of lighter background*/
+    flex-wrap: wrap; /* wrap when side is decreased */
 }
 
 /*removing generic radio button selector*/
 input[type="radio"]{
-    appearance: none;
+    appearance: none; 
 }
 
 /*highlight radio button*/
 input[type="radio"]:checked + label {
     background-color: #3f0505; 
-    border-radius: 100px;
-    padding: 3px;
-    color: white;
+    border-radius: 100px; /*roudning out lighter background*/
+    padding: 3px; /*adding highlight*/
+    color: white; /*text color*/
 }
 /*for mobile*/
 @media all and (max-width: 500px){
     h1{
-        font-size: 30px;
+        font-size: 30px; /*decreasing heading size to fit on the phone*/
     }
 
     .emotion_button{
-        flex-direction: column;
+        flex-direction: column; /*emojis in a straight line*/
         align-items: center;
     }
     input[type="radio"]{
         margin: 7px;
     }
     input[type="radio"]:checked + label {
-        width: fit-content;
+        width: fit-content; /*fixing highlight size*/
     }
 }
 /*styling submit button*/
 button{
     display: block;
-    height: 50px;
+    height: 50px; /*increasing height and width*/
     width: 70px;
     font-size: 0.45cm;
-    text-align: center;
+    text-align: center; /*centering the button on the page*/
     margin: auto;
-    border-radius: 10px;
-    font-family: "Outfit", sans-serif;
+    border-radius: 10px; /*roudning out background*/
+    font-family: "Outfit", sans-serif; /*google font for submit button*/
     color: var(--submit, #ab6b5a);  
 }
 
@@ -91,3 +91,31 @@ button:hover{
     background-color: #db8a74;
     color:  var(--section-background, #fff3ef);
 }
+
+/*text appears while hovering*/
+.image-box{ 
+    position: relative; /*definign a relative object to refer to*/
+} 
+   
+/*styling text for hover image*/
+.image-box .text-on-image { 
+    color: var(--submit, #ab6b5a);  
+    border-radius: 20px; /*roudning out background*/
+    text-align: center;  /*centering text*/
+    width: 170px; /*hardcoded as could not figure out why it was not working for the mobile*/
+} 
+
+/*aliging text relative to image-box using absolute*/
+.text-on-image { 
+    position: absolute; 
+    background-color:  rgba(255, 243, 239);
+    opacity: 0;  /*remove text when not hovering*/
+
+
+} 
+   
+.image-box:hover .text-on-image { 
+    opacity: 1;  /*show text box when hovering*/
+
+} 
+   
