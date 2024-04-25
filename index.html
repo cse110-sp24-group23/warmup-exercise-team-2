@@ -14,33 +14,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <h1> Mood Tracker </h1>
-    <h2>Please select how you feel and click submit.</h2>
+    <h1> Mood Tracker </h1> <!--main heading-->
+    <h2>Please select how you feel and click submit.</h2> <!--second heading-->
     <div class = "emotion_button">
-      <input type="radio" id="very sad" name="emotions" />
+      <input type="radio" id="very sad" name="emotions" /> <!--radio to change between emotions-->
       <label for="very sad">
-        <img src="emotion-1.png" alt="very sad" width="40px" height="40px" />
+        <div class="image-box">  <!--class to style hovering over image-->
+          <img src="emotion-1.png" alt="very sad" width="40px" height="40px" />
+          <p class = "text-on-image">I am really sad</p> 
+        </div> 
       </label>
       <input type="radio" id="sad" name="emotions" />
       <label for="sad">
-        <img src="emotion-2.png" alt="sad" width="40px" height="40px" />
+        <div class="image-box"> <!--class to style hovering over image-->
+          <img src="emotion-2.png" alt="sad" width="40px" height="40px" />
+          <p class = "text-on-image">I am sad</p> 
+        </div> 
       </label>
       <input type="radio" id="neutral" name="emotions" />
       <label for="neutral">
-        <img src="emotion-3.png" alt="neutral" width="40px" height="40px" />
+        <div class="image-box"> <!--class to style hovering over image-->
+          <img src="emotion-3.png" alt="neutral" width="40px" height="40px" />
+          <p class = "text-on-image">I am okay</p> 
+        </div> 
       </label>
       <input type="radio" id="happy" name="emotions" />
       <label for="happy">
-        <img src="emotion-4.png" alt="happy" width="40px" height="40px" />
+        <div class="image-box"> <!--class to style hovering over image-->
+          <img src="emotion-4.png" alt="happy" width="40px" height="40px" /> 
+          <p class = "text-on-image">I am happy</p> 
+        </div> 
       </label>
       <input type="radio" id="very happy" name="emotions" />
       <label for="very happy">
-        <img src="emotion-5.png" alt="very happy" width="40px" height="40px" />
+        <div class="image-box"> <!--class to style hovering over image-->
+          <img src="emotion-5.png" alt="very happy" width="40px" height="40px" />
+          <p class = "text-on-image">I am really happy</p> 
+        </div> 
       </label>
       <br>
     </div>
     <br>
-    <div class = "button">
+    <div class = "button"> <!--button to sumit changes-->
       <button type="button">Submit</button>
     </div>
   </body>
