@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <title>Mood Tracker</title>
+    <link rel="stylesheet" href="index-css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;1,300&family=Outfit:wght@600&family=Shrikhand&display=swap" rel="stylesheet"><!--font family-->
     <meta charset="UTF-8" />
     <meta
       name="description"
@@ -12,30 +14,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
+    <h1> Mood Tracker </h1>
     <h2>Please select how you feel and click submit.</h2>
-
-    <input type="radio" id="sad" name="emotions" />
-    <label for="sad">
-      <img src="emotion-1.png" alt="sad" width="40px" height="40px" />
-    </label>
-    <input type="radio" id="notsad" name="emotions" />
-    <label for="notsad">
-      <img src="emotion-2.png" alt="not sad" width="40px" height="40px" />
-    </label>
-    <input type="radio" id="normal" name="emotions" />
-    <label for="normal">
-      <img src="emotion-3.png" alt="normal" width="40px" height="40px" />
-    </label>
-    <input type="radio" id="nothappy" name="emotions" />
-    <label for="nothappy">
-      <img src="emotion-4.png" alt="not happy" width="40px" height="40px" />
-    </label>
-    <input type="radio" id="happy" name="emotions" />
-    <label for="happy">
-      <img src="emotion-5.png" alt="happy" width="40px" height="40px" />
-    </label>
-    <br />
-    <div>
+    <div class = "emotion_button">
+      <input type="radio" id="very sad" name="emotions" />
+      <label for="very sad">
+        <img src="emotion-1.png" alt="very sad" width="40px" height="40px" />
+      </label>
+      <input type="radio" id="sad" name="emotions" />
+      <label for="sad">
+        <img src="emotion-2.png" alt="sad" width="40px" height="40px" />
+      </label>
+      <input type="radio" id="neutral" name="emotions" />
+      <label for="neutral">
+        <img src="emotion-3.png" alt="neutral" width="40px" height="40px" />
+      </label>
+      <input type="radio" id="happy" name="emotions" />
+      <label for="happy">
+        <img src="emotion-4.png" alt="happy" width="40px" height="40px" />
+      </label>
+      <input type="radio" id="very happy" name="emotions" />
+      <label for="very happy">
+        <img src="emotion-5.png" alt="very happy" width="40px" height="40px" />
+      </label>
+      <br>
+    </div>
+    <br>
+    <div class = "button">
       <button type="button">Submit</button>
     </div>
   </body>
