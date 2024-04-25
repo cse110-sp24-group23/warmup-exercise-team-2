@@ -1,0 +1,93 @@
+/* defining colors*/
+:root{ 
+    --section-background: #fff3ef;
+    --main-background: #FAC9B8;
+    --submit: #72473b;
+    --smaller-heading: #ab6b5a;
+}
+
+/*setting background color*/
+body{ 
+    background-color: var(--main-background, #FAC9B8);
+}
+
+/*styling texts*/
+h1{ 
+    padding: 30px;
+    text-align: center;
+    background-color: var(--section-background, #fff3ef);
+    border-radius: 10px;
+    color:  var(--smaller-heading, #ab6b5a);
+    font-family: "Shrikhand", serif; /*google font*/
+    font-size: 50px;
+}
+
+/*styling texts*/
+h2{
+    padding: 15px;
+    text-align: center;
+    background-color: var(--section-background, #fff3ef);
+    border-radius: 10px;
+    color: var(--smaller-heading, #ab6b5a);  
+    font-family: "Archivo", sans-serif; /*google font*/
+    
+}
+
+/*styling flex box for emotion button*/
+.emotion_button{
+    display: flex;
+    justify-content:center;
+    column-gap: 20px;
+    background-color: var(--section-background, #fff3ef);
+    border-radius: 10px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+/*removing generic radio button selector*/
+input[type="radio"]{
+    appearance: none;
+}
+
+/*highlight radio button*/
+input[type="radio"]:checked + label {
+    background-color: #3f0505; 
+    border-radius: 100px;
+    padding: 3px;
+    color: white;
+}
+/*for mobile*/
+@media all and (max-width: 500px){
+    h1{
+        font-size: 30px;
+    }
+
+    .emotion_button{
+        flex-direction: column;
+        align-items: center;
+    }
+    input[type="radio"]{
+        margin: 7px;
+    }
+    input[type="radio"]:checked + label {
+        width: fit-content;
+    }
+}
+/*styling submit button*/
+button{
+    display: block;
+    height: 50px;
+    width: 70px;
+    font-size: 0.45cm;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    font-family: "Outfit", sans-serif;
+    color: var(--submit, #ab6b5a);  
+}
+
+/*styling submit button when hovering*/
+button:hover{
+    background-color: #db8a74;
+    color:  var(--section-background, #fff3ef);
+}
