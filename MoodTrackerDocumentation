@@ -1,0 +1,23 @@
+# Mood Tracker
+###  - - CSE 110 Team 23 Group 2- -
+
+## App Specifications
+* MUST allow user to select a sentiment from a list from different sentiments
+* MUST have accessibility features 
+* May have an option to redo a choice before submitting
+* May have styled pictures as buttons for the sentiments
+* May display saved emotions on the page
+
+## Tasks
+* HTML
+	* Boilerplate (Title, description, buttons)
+	* Radio emoji buttons
+* CSS
+	* Highlight which emoji was selected
+	* General styling for web page
+* JavaScript
+	* Store the saved sentiments
+* General Documentation
+	* Create issues
+	* Testing documentation
+	* Update team README.md files
