@@ -67,7 +67,7 @@ input[type="radio"]:checked + label {
         align-items: center;
     }
     input[type="radio"]{
-        margin: 7px;
+        margin: 10px;
     }
     input[type="radio"]:checked + label {
         width: fit-content; /*fixing highlight size*/
@@ -96,7 +96,7 @@ button:hover{
 .image-box{ 
     position: relative; /*definign a relative object to refer to*/
 } 
-   
+
 /*styling text for hover image*/
 .image-box .text-on-image { 
     color: var(--submit, #ab6b5a);  
@@ -110,8 +110,8 @@ button:hover{
     position: absolute; 
     background-color:  rgba(255, 243, 239);
     opacity: 0;  /*remove text when not hovering*/
-
-
+    top: 50px; /*Adjust the distance from the top*/
+    right: -60px;
 } 
    
 .image-box:hover .text-on-image { 
