@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="index-css.css">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;1,300&family=Outfit:wght@600&family=Shrikhand&display=swap" rel="stylesheet"><!--font family-->
     <meta charset="UTF-8" >
+
+    <!--meta data, information about the data -->
     <meta
-      name="description"
+      name="description" 
       content="Select your emotions and click the submit button.">
     <meta name="keywords" content="HTML">
     <meta name="author" content="Team 23">
@@ -15,12 +17,13 @@
   </head>
   <body>
     <h1> Mood Tracker </h1> <!--main heading-->
+    <!--text prompt for user to enter in emotion, using radio buttons (can only select one not multiple)-->
     <h2>Please select how you feel and click submit.</h2> <!--second heading-->
     <div class = "emotion_button">
       <input type="radio" id="very_sad" name="emotions"> <!--radio to change between emotions-->
       <label class="image-box" for="very_sad"> <!--class to style hovering over image-->
-          <img src="emotion-1.png" alt="very_sad" width="40" height="40">
-          <span class="text-on-image">I am really sad</span>
+          <img src="emotion-1.png" alt="very_sad" width="40" height="40"> <!--image is the button, what user clicks on-->
+          <span class="text-on-image">I am really sad</span> <!--the text that displays when hovering over button-->
       </label>
       <input type="radio" id="sad" name="emotions">
       <label class="image-box" for="sad"> <!--class to style hovering over image-->
