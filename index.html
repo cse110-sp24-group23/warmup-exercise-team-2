@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mood Tracker</title>
+    <script src="Script.js"></script> <!--js link-->
+    <link rel="stylesheet" href="index-css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;1,300&family=Outfit:wght@600&family=Shrikhand&display=swap" rel="stylesheet"><!--font family-->
+    <meta charset="UTF-8" >
+
+    <!--meta data, information about the data -->
+    <meta
+      name="description" 
+      content="Select your emotions and click the submit button.">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Team 23">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1> Mood Tracker </h1> <!--main heading-->
+    <!--text prompt for user to enter in emotion, using radio buttons (can only select one not multiple)-->
+    <h2>Please select how you feel and click submit.</h2> <!--second heading-->
+    <div class = "emotion_button">
+      <input type="radio" id="very_sad" name="emotions"> <!--radio to change between emotions-->
+      <label class="image-box" for="very_sad"> <!--class to style hovering over image-->
+          <img src="emotion-1.png" alt="very_sad" width="40" height="40"> <!--image is the button, what user clicks on-->
+          <span class="text-on-image">I am really sad</span> <!--the text that displays when hovering over button-->
+      </label>
+      <input type="radio" id="sad" name="emotions">
+      <label class="image-box" for="sad"> <!--class to style hovering over image-->
+          <img src="emotion-2.png" alt="sad" width="40" height="40">
+          <span class = "text-on-image">I am sad</span>  
+      </label>
+      <input type="radio" id="neutral" name="emotions">
+      <label class="image-box" for="neutral"> <!--class to style hovering over image-->
+          <img src="emotion-3.png" alt="neutral" width="40" height="40">
+          <span class = "text-on-image">I am okay</span> 
+      </label>
+      <input type="radio" id="happy" name="emotions">
+      <label class="image-box" for="happy"> <!--class to style hovering over image-->
+          <img src="emotion-4.png" alt="happy" width="40" height="40"> 
+          <span class = "text-on-image">I am happy</span> 
+      </label>
+      <input type="radio" id="very_happy" name="emotions">
+      <label class="image-box" for="very_happy"> <!--class to style hovering over image-->
+          <img src="emotion-5.png" alt="very_happy" width="40" height="40">
+          <span class = "text-on-image">I am really happy</span> 
+      </label>
+      <br>
+    </div>
+    <br>
+    <div class = "button"> <!--button to submit changes-->
+      <button type="button">Submit</button>
+    </div>
+  </body>
+</html>
