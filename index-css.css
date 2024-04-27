@@ -77,7 +77,6 @@ input[type="radio"]:checked + label {
 button{
     display: block;
     height: 50px; /*increasing height and width*/
-    width: 70px;
     font-size: 0.45cm;
     text-align: center; /*centering the button on the page*/
     margin: auto;
